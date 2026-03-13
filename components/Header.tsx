@@ -70,7 +70,7 @@ export default function Header() {
                 letterSpacing: '1px',
                 textDecoration: 'none',
                 transition: 'all 0.2s',
-                background2: pathname === link.href ? 'rgba(201,168,76,0.08)' : 'transparent',
+                background: pathname === link.href ? 'rgba(201,168,76,0.08)' : 'transparent',
               }}>
               {link.label}
             </Link>
