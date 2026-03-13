@@ -61,7 +61,6 @@ export default function Header() {
           {navLinks.map(link => (
             <Link key={link.href} href={link.href}
               style={{
-                background: 'transparent',
                 border: `1px solid ${pathname === link.href ? 'rgba(201,168,76,0.6)' : 'rgba(255,255,255,0.1)'}`,
                 color: pathname === link.href ? '#C9A84C' : '#8A8799',
                 padding: '0.4rem 1.2rem',
