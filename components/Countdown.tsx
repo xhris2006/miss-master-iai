@@ -10,6 +10,7 @@ export default function Countdown() {
 
   useEffect(() => {
     setMounted(true)
+    console.log('CONTEST_CONFIG:', CONTEST_CONFIG) // Debug
     const calc = () => {
       const now = new Date().getTime()
       const end = CONTEST_CONFIG.voteEndDate.getTime()
