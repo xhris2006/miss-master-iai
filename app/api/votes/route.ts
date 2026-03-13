@@ -19,14 +19,6 @@ export async function POST(req: NextRequest) {
     if (cErr || !candidate) return NextResponse.json({ error: 'Candidat introuvable' }, { status: 404 })
 
     // Check already voted in this category
-    const { data: existing } = await supabase
-      .from('votes')
-      .select('votes.id')
-      .eq('user_id', user.id)
-      .eq('candidates.category', candidate.category)
-      .join('candidates', 'votes.candidate_id', 'candidates.id')
-
-    // Alternative: check via RPC / raw query
     const { data: alreadyVoted } = await supabase.rpc('has_voted_in_category', {
       p_user_id: user.id,
       p_category: candidate.category,
