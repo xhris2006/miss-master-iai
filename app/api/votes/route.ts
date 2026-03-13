@@ -4,7 +4,7 @@ import { isVotingOpen } from '@/lib/config'
 
 export async function POST(req: NextRequest) {
   try {
-    const supabase = createServerSupabase()
+    const supabase = await createServerSupabase()
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) return NextResponse.json({ error: 'Non connecté' }, { status: 401 })
 

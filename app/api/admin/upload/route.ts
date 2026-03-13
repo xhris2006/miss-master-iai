@@ -3,7 +3,7 @@ import { createServerSupabase } from '@/lib/supabase-server'
 import { isAdmin } from '@/lib/config'
 
 export async function POST(req: NextRequest) {
-  const supabase = createServerSupabase()
+  const supabase = await createServerSupabase()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user || !isAdmin(user.email)) return NextResponse.json({ error: 'Non autorisé' }, { status: 403 })
 

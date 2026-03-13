@@ -4,7 +4,7 @@ import { isAdmin } from '@/lib/config'
 
 // GET - list all candidates
 export async function GET() {
-  const supabase = createServerSupabase()
+  const supabase = await createServerSupabase()
   const { data, error } = await supabase.from('candidates').select('*').order('vote_count', { ascending: false })
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
   return NextResponse.json(data)
@@ -12,7 +12,7 @@ export async function GET() {
 
 // POST - create candidate (admin only)
 export async function POST(req: NextRequest) {
-  const supabase = createServerSupabase()
+  const supabase = await createServerSupabase()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user || !isAdmin(user.email)) return NextResponse.json({ error: 'Non autorisé' }, { status: 403 })
 
