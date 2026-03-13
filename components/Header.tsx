@@ -35,7 +35,7 @@ export default function Header() {
     <header className="relative z-20" style={{ borderBottom: '1px solid rgba(201,168,76,0.15)' }}>
       {/* Top banner */}
       <div style={{ background: 'linear-gradient(90deg, rgba(201,168,76,0.1), rgba(201,168,76,0.05))', borderBottom: '1px solid rgba(201,168,76,0.1)' }}
-        className="text-center py-2 px-4 text-xs tracking-widest uppercase" style2={{ color: '#8A8799' }}>
+        className="text-center py-2 px-4 text-xs tracking-widest uppercase">
         <span style={{ color: '#8A8799', letterSpacing: '3px', fontSize: '0.7rem' }}>
           ✦ Institut Africain d'Informatique · Mbalmayo ✦
         </span>
