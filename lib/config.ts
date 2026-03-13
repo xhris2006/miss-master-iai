@@ -1,7 +1,7 @@
 export const CONTEST_CONFIG = {
-  edition: process.env.NEXT_PUBLIC_EDITION || '2025',
-  voteEndDate: new Date(process.env.NEXT_PUBLIC_VOTE_END_DATE || '2025-12-31T23:59:59'),
-  voteStartDate: new Date(process.env.NEXT_PUBLIC_VOTE_START_DATE || '2025-10-01T00:00:00'),
+  edition: process.env.NEXT_PUBLIC_EDITION || '2026',
+  voteEndDate: new Date(process.env.NEXT_PUBLIC_VOTE_END_DATE || '2026-12-31T23:59:59'),
+  voteStartDate: new Date(process.env.NEXT_PUBLIC_VOTE_START_DATE || '2026-10-01T00:00:00'),
   adminEmail: process.env.NEXT_PUBLIC_ADMIN_EMAIL || 'admin@iai-mbalmayo.cm',
 }
 

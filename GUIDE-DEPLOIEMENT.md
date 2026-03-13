@@ -94,9 +94,9 @@ Dans Vercel, avant de déployer, clique **Environment Variables** et ajoute ces 
 | `NEXT_PUBLIC_SUPABASE_URL` | Ton URL Supabase (étape 1.2) | `https://abcdefgh.supabase.co` |
 | `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Ta clé anon (étape 1.2) | `eyJhbGci...` |
 | `NEXT_PUBLIC_ADMIN_EMAIL` | L'email de l'admin du site | `admin@iai-mbalmayo.cm` |
-| `NEXT_PUBLIC_EDITION` | L'année du concours | `2025` |
-| `NEXT_PUBLIC_VOTE_START_DATE` | Date début votes | `2025-10-01T00:00:00` |
-| `NEXT_PUBLIC_VOTE_END_DATE` | Date fin votes | `2025-12-31T23:59:59` |
+| `NEXT_PUBLIC_EDITION` | L'année du concours | `2026` |
+| `NEXT_PUBLIC_VOTE_START_DATE` | Date début votes | `2026-10-01T00:00:00` |
+| `NEXT_PUBLIC_VOTE_END_DATE` | Date fin votes | `2026-12-31T23:59:59` |
 
 > 📅 **Format des dates** : `AAAA-MM-JJTHH:MM:SS`
 > Exemple pour le 15 novembre 2025 à 20h : `2025-11-15T20:00:00`
