@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Miss & Master IAI Mbalmayo 2025',
   description: 'Votez pour vos candidats favoris au concours Miss & Master IAI Mbalmayo',
   openGraph: {
-    title: 'Miss & Master IAI Mbalmayo 2025',
+    title: 'Miss & Master IAI Mbalmayo 2026',
     description: 'Votez pour vos candidats favoris',
   },
 }
